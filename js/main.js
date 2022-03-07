@@ -28,8 +28,10 @@ const handleOverLay = () => {
   
   // after load page will invoke addOverLay() function
   window.onload = function(){
-
-    addOverLay();
+    setTimeout(() => {
+      addOverLay();
+    },500)
+    
   }
 
 }
