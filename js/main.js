@@ -5,17 +5,12 @@ const menuBtn = createQuerySelector('.menu-btn'),
       menuNav = createQuerySelector('.menu-nav'),
       menuBranding = createQuerySelector('.menu-branding'),
       navItems = createQuerySelector('.nav-item'),
+      overLay = createQuerySelector('.overLay'),
       Body = createQuerySelector("body");
 
 // Body.style.display = "none"
 
 const handleOverLay = () => {
-  
-  // define and initialize overlay div
-  let overLay = createDiv();
-
-  // asign class with value to overlay div
-  createAsignClass(overLay , "overLay")
 
   // function to add hide overlay
   function addOverLay() {
@@ -23,15 +18,9 @@ const handleOverLay = () => {
     createAsignClass(overLay , "overLay hide")
   }
   
-  // append overlay div to body
-  createAppendChild(Body , overLay)
-  
   // after load page will invoke addOverLay() function
   window.onload = function(){
-    setTimeout(() => {
-      addOverLay();
-    },500)
-    
+    addOverLay();
   }
 
 }
