@@ -1,3 +1,4 @@
+
 // Select DOM Items
 const menuBtn = createQuerySelector('.menu-btn'),
       menu = createQuerySelector('.menu'),
@@ -6,16 +7,18 @@ const menuBtn = createQuerySelector('.menu-btn'),
       navItems = createQuerySelector('.nav-item'),
       Body = createQuerySelector("body");
 
+// Body.style.display = "none"
+
 const handleOverLay = () => {
+  
   // define and initialize overlay div
   let overLay = createDiv();
-  
+
   // asign class with value to overlay div
   createAsignClass(overLay , "overLay")
-  
+
   // function to add hide overlay
   function addOverLay() {
-
     // asign class with value to overlay div
     createAsignClass(overLay , "overLay hide")
   }
@@ -25,15 +28,18 @@ const handleOverLay = () => {
   
   // after load page will invoke addOverLay() function
   window.onload = function(){
-    setTimeout(() => {
-      addOverLay();
-    },100)
+
+    addOverLay();
   }
 
 }
 
-// invoke handleOverLay function
-handleOverLay()
+if (typeof NodeList !== "undefined") {
+  // invoke handleOverLay function
+  handleOverLay()
+}
+
+
 
 // Set Initial State Of Menu
 let showMenu = false;
