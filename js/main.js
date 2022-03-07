@@ -124,3 +124,30 @@ const handleFooter = () => {
 
 // invoke handleFooter function
 handleFooter()
+
+const handleOverLay = () => {
+  // define and initialize overlay div
+  let overLay = createDiv();
+  
+  // asign class with value to overlay div
+  createAsignClass(overLay , "overLay")
+  
+  // function to add hide overlay
+  function addOverLay() {
+
+    // asign class with value to overlay div
+    createAsignClass(overLay , "overLay hide")
+  }
+  
+  // append overlay div to body
+  createAppendChild(Body , overLay)
+  
+  // after load page will invoke addOverLay() function
+  window.onload = function(){
+    addOverLay();
+  }
+
+}
+
+// invoke handleOverLay function
+handleOverLay()

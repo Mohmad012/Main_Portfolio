@@ -1,5 +1,5 @@
-// import allData from "./projectData.json"
 
+// the data for all of project
 const allData = [
     {
         "img":"./img/projects/amazon.jpg",
@@ -145,45 +145,77 @@ let projects = document.querySelector(".projects")
 
 // loop on All data
 allData.forEach(element => {
-    // create main vars
+    /** define:
+     * work Item that have all of info about the work
+     * link that have img of the work
+     * button that have name of work and href for it also
+     * button that have link of github for the work
+     * img of work
+     * eye icon for name of work
+     * github icon
+     * name of work
+     */
     let workItem , viewsLink , btnLight , btnDark , imgViews , eyeIcon ,
         githubIcon , title;
 
-    // create constants parent elements
+    // create work Item
     workItem = createDiv()
+
+    // create link have img of the work
     viewsLink = createAnchor()
+
+    // create button have name of work and href for it also
     btnLight = createAnchor()
     
-
-    // create constants child elements
+    // create img of work
     imgViews = createImg()
+    
+    // create eye icon for name of work
     eyeIcon = createItag()
 
-    // create constants parent attributes
+    // asign class to work Item with value
     createAsignClass(workItem , "item")
+
+    // asign class to link have img of the work with value
     createAsignClass(viewsLink , "views")
 
+    // asign href to link have img of the work with value
     createAsignHref(viewsLink , element.linkLive)
+
+    // asign target to link have img of the work with value
     createAsignTarget(viewsLink , "_blank")
 
+    // asign class to button have name of work and href for it with value
     createAsignClass(btnLight , "btn-light")
 
+    // asign href to button have name of work and href for it with value
     createAsignHref(btnLight , element.linkLive)
+
+    // asign target to button have name of work and href for it with value
     createAsignTarget(btnLight , "_blank")
 
-    // create constants child attributes
+    // asign src to img of the work with value
     createAsignSrc(imgViews , element.img)
+
+    // asign alt to img of the work with value
     createAsignAlt(imgViews , "Project")
 
+    // asign class to eye icon for name of work with value
     createAsignClass(eyeIcon , "fas fa-eye")
 
+    // create text for name of the work
     title = createText(` ${element.name}`)
 
-    // asign constants child elements to parent elements
+    // append img of work to the link of work
     createAppendChild(viewsLink , imgViews)
+
+    // append eye icon for name of work to the link of work
     createAppendChild(btnLight , eyeIcon)
+
+    // append text for name of the work to the link of work
     createAppendChild(btnLight , title)
 
+    // check if there is github link for each frontend and backend or not!
     if(!element.frontBack){
 
         // define Github word
@@ -317,5 +349,3 @@ allData.forEach(element => {
     createAppendChild(projects , workItem)
     
 });
-
-console.log(projects)
