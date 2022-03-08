@@ -25,10 +25,13 @@ const handleOverLay = () => {
 
 }
 
-if (typeof NodeList !== "undefined") {
+// invoke handleOverLay function
+handleOverLay()
+
+// if (typeof NodeList !== "undefined") {
   // invoke handleOverLay function
-  handleOverLay()
-}
+  // handleOverLay()
+// }
 
 
 
