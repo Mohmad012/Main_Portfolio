@@ -1,2 +1,3 @@
 # Main_Portfolio
-in this repo i've all of my project that i did with some information about me
+in this repo have all of my project that i finished right now with some of information about me
+
