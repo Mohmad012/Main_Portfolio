@@ -4,28 +4,9 @@ const menuBtn = createQuerySelector('.menu-btn'),
       menu = createQuerySelector('.menu'),
       menuNav = createQuerySelector('.menu-nav'),
       menuBranding = createQuerySelector('.menu-branding'),
-      navItems = createQuerySelector('.nav-item'),
-      overLay = createQuerySelector('.overLay');
+      navItems = createQuerySelector('.nav-item');
 
 // Body.style.display = "none"
-
-const handleOverLay = () => {
-
-  // function to add hide overlay
-  function addOverLay() {
-    // asign class with value to overlay div
-    createAsignClass(overLay , "overLay hide")
-  }
-  
-  // after load page will invoke addOverLay() function
-  window.onload = function(){
-    addOverLay();
-  }
-
-}
-
-// invoke handleOverLay function
-handleOverLay()
 
 // if (typeof NodeList !== "undefined") {
   // invoke handleOverLay function
@@ -113,7 +94,7 @@ const handleFooter = () => {
   // define Vars of footer and content footer
   let footer , text , Body;
 
-  Body = createQuerySelector("body");
+  Body = createQuerySelector(".Body")
 
   // create footer
   footer = createFooter()

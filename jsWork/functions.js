@@ -55,7 +55,7 @@ const createAsignAlt = (tag , val) => {
 
 // Function to append Child to tag
 const createAppendChild = (parent , child) => {
-    return parent.appendChild(child)
+    parent && parent.appendChild(child)
 }
 
 // Create Li Tag Function
@@ -80,3 +80,24 @@ const createFooter = () => {
 const createAsignId = (tag , val) => {
     return tag.id = val
 }
+
+const handleOverLay = () => {
+
+    // function to add hide overlay
+    function addOverLay() {
+  
+      let overLay = createQuerySelector('.overLay');
+  
+      // asign class with value to overlay div
+      createAsignClass(overLay , "overLay hide")
+    }
+    
+    // after load page will invoke addOverLay() function
+    window.onload = function(){
+      addOverLay();
+    }
+  
+}
+
+// invoke handleOverLay function
+handleOverLay()
