@@ -9,8 +9,6 @@ module.exports = function(grunt){
                             'jsWork/functions.js',
                             'jsWork/dataOfPages.js',
                             'jsWork/allData.js',
-                            
-                            
                             'jsWork/main.js',
                             'jsWork/work.js',
                         ],
@@ -101,8 +99,8 @@ module.exports = function(grunt){
     grunt.loadNpmTasks("grunt-contrib-connect")
 
     // use aliase
-    grunt.registerTask("compress" , "uglify"); // or add many of files
-    // grunt.registerTask("compress" , ["uglify" , "cssmin" , "htmlmin"]);
+    // grunt.registerTask("compress" , "uglify"); // or add many of files
+    grunt.registerTask("compress" , ["uglify" , "cssmin" , "htmlmin"]);
     // grunt.registerTask("default" , ["connect" , "watch"]); // only use (grunt) keyword to run the task
     grunt.registerTask("default" , ["watch"]);
     grunt.registerTask("compressT2" , "uglify:t2")
