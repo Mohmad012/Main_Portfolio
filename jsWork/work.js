@@ -114,7 +114,7 @@ allData.forEach(element => {
         createAppendChild(workItem , btnLight)
 
         // Append dark anchor link to parent Item
-        createAppendChild(workItem , btnDark)
+        !element.rmGithub && createAppendChild(workItem , btnDark)
     
     }else{
         /**

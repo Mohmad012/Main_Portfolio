@@ -8,6 +8,13 @@ const allData = [
         "frontBack":false
     },
     {
+        "img":"./assets/img/projects/nft-bg-3.webp",
+        "linkLive":"https://mohmad012.github.io/app/",
+        "linkGithub":"https://github.com/Mohmad012/template_react",
+        "name":"NTF App",
+        "rmGithub":true
+    },
+    {
         "img":"./assets/img/projects/Crypto.webp",
         "linkLive":"https://mohmad012.github.io/Template_Deme_App/",
         "linkGithub":"https://github.com/Mohmad012/Template_Deme_App",
@@ -19,13 +26,6 @@ const allData = [
         "linkLive":"https://mohmad012.github.io/profile_template/",
         "linkGithub":"https://github.com/Mohmad012/profile_template",
         "name":"ETH App",
-        "frontBack":false
-    },
-    {
-        "img":"./assets/img/projects/ntf.webp",
-        "linkLive":"https://mohmad012.github.io/template_react/",
-        "linkGithub":"https://github.com/Mohmad012/template_react",
-        "name":"NTF App",
         "frontBack":false
     },
     {
