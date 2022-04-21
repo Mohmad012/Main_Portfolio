@@ -15,17 +15,16 @@ const allData = [
         "rmGithub":true
     },
     {
+        "img":"./assets/img/projects/eth.webp",
+        "linkLive":"https://mohmad012.github.io/app_nft/",
+        "name":"ETH App",
+        "rmGithub":true
+    },
+    {
         "img":"./assets/img/projects/Crypto.webp",
         "linkLive":"https://mohmad012.github.io/Template_Deme_App/",
         "linkGithub":"https://github.com/Mohmad012/Template_Deme_App",
         "name":"Crypto App",
-        "frontBack":false
-    },
-    {
-        "img":"./assets/img/projects/eth.webp",
-        "linkLive":"https://mohmad012.github.io/profile_template/",
-        "linkGithub":"https://github.com/Mohmad012/profile_template",
-        "name":"ETH App",
         "frontBack":false
     },
     {
