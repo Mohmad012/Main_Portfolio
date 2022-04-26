@@ -18,61 +18,61 @@ allData.forEach(element => {
         githubIcon , title;
 
     // create work Item
-    workItem = createDiv()
+    workItem = allFunc.createDiv()
 
     // create link have img of the work
-    viewsLink = createAnchor()
+    viewsLink = allFunc.createAnchor()
 
     // create button have name of work and href for it also
-    btnLight = createAnchor()
+    btnLight = allFunc.createAnchor()
     
     // create img of work
-    imgViews = createImg()
+    imgViews = allFunc.createImg()
     
     // create eye icon for name of work
-    eyeIcon = createItag()
+    eyeIcon = allFunc.createItag()
 
     // asign class to work Item with value
-    createAsignClass(workItem , "item")
+    allFunc.createAsignClass(workItem , "item")
 
     // asign class to link have img of the work with value
-    createAsignClass(viewsLink , "views")
+    allFunc.createAsignClass(viewsLink , "views")
 
     // asign href to link have img of the work with value
-    createAsignHref(viewsLink , element.linkLive)
+    allFunc.createAsignHref(viewsLink , element.linkLive)
 
     // asign target to link have img of the work with value
-    createAsignTarget(viewsLink , "_blank")
+    allFunc.createAsignTarget(viewsLink , "_blank")
 
     // asign class to button have name of work and href for it with value
-    createAsignClass(btnLight , "btn-light")
+    allFunc.createAsignClass(btnLight , "btn-light")
 
     // asign href to button have name of work and href for it with value
-    createAsignHref(btnLight , element.linkLive)
+    allFunc.createAsignHref(btnLight , element.linkLive)
 
     // asign target to button have name of work and href for it with value
-    createAsignTarget(btnLight , "_blank")
+    allFunc.createAsignTarget(btnLight , "_blank")
 
     // asign src to img of the work with value
-    createAsignSrc(imgViews , element.img)
+    allFunc.createAsignSrc(imgViews , element.img)
 
     // asign alt to img of the work with value
-    createAsignAlt(imgViews , "Project")
+    allFunc.createAsignAlt(imgViews , "Project")
 
     // asign class to eye icon for name of work with value
-    createAsignClass(eyeIcon , "fas fa-eye")
+    allFunc.createAsignClass(eyeIcon , "fas fa-eye")
 
     // create text for name of the work
-    title = createText(` ${element.name}`)
+    title = allFunc.createText(` ${element.name}`)
 
     // append img of work to the link of work
-    createAppendChild(viewsLink , imgViews)
+    allFunc.createAppendChild(viewsLink , imgViews)
 
     // append eye icon for name of work to the link of work
-    createAppendChild(btnLight , eyeIcon)
+    allFunc.createAppendChild(btnLight , eyeIcon)
 
     // append text for name of the work to the link of work
-    createAppendChild(btnLight , title)
+    allFunc.createAppendChild(btnLight , title)
 
     // check if there is github link for each frontend and backend or not!
     if(!element.frontBack){
@@ -81,40 +81,40 @@ allData.forEach(element => {
         let titleGithub;
 
         // Create dark anchor link Tag
-        btnDark = createAnchor()
+        btnDark = allFunc.createAnchor()
 
         // Create I Tag
-        githubIcon = createItag()
+        githubIcon = allFunc.createItag()
 
         // Add value to class in dark anchor link
-        createAsignClass(btnDark , "btn-dark")
+        allFunc.createAsignClass(btnDark , "btn-dark")
 
         // Add path to href in dark anchor link
-        createAsignHref(btnDark , element.linkGithub)
+        allFunc.createAsignHref(btnDark , element.linkGithub)
 
         // Add blank to target in dark anchor link
-        createAsignTarget(btnDark , "_blank")
+        allFunc.createAsignTarget(btnDark , "_blank")
 
         // Add class with value to I Tag to display Icon Github
-        createAsignClass(githubIcon , "fab fa-github")
+        allFunc.createAsignClass(githubIcon , "fab fa-github")
 
         // Create Github word
-        titleGithub = createText(" Github")
+        titleGithub = allFunc.createText(" Github")
 
         // Append Icon Github to anchor link
-        createAppendChild(btnDark , githubIcon)
+        allFunc.createAppendChild(btnDark , githubIcon)
 
         // Append Text Github to anchor link
-        createAppendChild(btnDark , titleGithub)
+        allFunc.createAppendChild(btnDark , titleGithub)
 
         // Append Box Img to parent Item
-        createAppendChild(workItem , viewsLink)
+        allFunc.createAppendChild(workItem , viewsLink)
 
         // Append white anchor link to parent Item
-        createAppendChild(workItem , btnLight)
+        allFunc.createAppendChild(workItem , btnLight)
 
         // Append dark anchor link to parent Item
-        !element.rmGithub && createAppendChild(workItem , btnDark)
+        !element.rmGithub && allFunc.createAppendChild(workItem , btnDark)
     
     }else{
         /**
@@ -129,82 +129,82 @@ allData.forEach(element => {
         let linkBack , linkFront , githubIconBack , githubItem, githubIconFront , titleBack , titleFront;
 
         // Create Box have front and back end github link
-        githubItem = createDiv()
+        githubItem = allFunc.createDiv()
 
         // Create BackEnd github link
-        linkBack = createAnchor()
+        linkBack = allFunc.createAnchor()
 
         // Create FrontEnd github link
-        linkFront = createAnchor()
+        linkFront = allFunc.createAnchor()
 
         // Create BackEnd github Icon
-        githubIconBack = createItag()
+        githubIconBack = allFunc.createItag()
 
         // Create FrontEnd github Icon
-        githubIconFront = createItag()
+        githubIconFront = allFunc.createItag()
 
         // asign class have value to git box
-        createAsignClass(githubItem , "item_Git")
+        allFunc.createAsignClass(githubItem , "item_Git")
 
         // asign class have value to backend github link
-        createAsignClass(linkBack , "btn-dark")
+        allFunc.createAsignClass(linkBack , "btn-dark")
 
         // asign href have value to backend github link
-        createAsignHref(linkBack , element.linkGithub)
+        allFunc.createAsignHref(linkBack , element.linkGithub)
 
         // asign target have value to backend github link
-        createAsignTarget(linkBack , "_blank")
+        allFunc.createAsignTarget(linkBack , "_blank")
 
         // asign class have value to I Tag to display github icon
-        createAsignClass(githubIconBack , "fab fa-github")
+        allFunc.createAsignClass(githubIconBack , "fab fa-github")
 
         // Create Backend word
-        titleBack = createText(" Backend")
+        titleBack = allFunc.createText(" Backend")
 
         // asign class have value to frontend github link
-        createAsignClass(linkFront , "btn-dark")
+        allFunc.createAsignClass(linkFront , "btn-dark")
 
         // asign href have value to frontend github link
-        createAsignHref(linkFront , "https://store-shop-phi.vercel.app/")
+        allFunc.createAsignHref(linkFront , "https://store-shop-phi.vercel.app/")
 
         // asign target have value to frontend github link
-        createAsignTarget(linkFront , "_blank")
+        allFunc.createAsignTarget(linkFront , "_blank")
 
         // asign class have value to I Tag to display github icon
-        createAsignClass(githubIconFront , "fab fa-github")
+        allFunc.createAsignClass(githubIconFront , "fab fa-github")
 
         // Create Frontend word
-        titleFront = createText(" Frontend")
+        titleFront = allFunc.createText(" Frontend")
 
         // Append Box Img to parent Item
-        createAppendChild(workItem , viewsLink)
+        allFunc.createAppendChild(workItem , viewsLink)
 
         // Append white anchor link to parent Item
-        createAppendChild(workItem , btnLight)
+        allFunc.createAppendChild(workItem , btnLight)
 
         // Append github icon Tag to backend github link
-        createAppendChild(linkBack , githubIconBack)
+        allFunc.createAppendChild(linkBack , githubIconBack)
 
         // Append Backend word to backend github link
-        createAppendChild(linkBack , titleBack)
+        allFunc.createAppendChild(linkBack , titleBack)
 
         // Append github icon Tag to frontend github link
-        createAppendChild(linkFront , githubIconFront)
+        allFunc.createAppendChild(linkFront , githubIconFront)
 
         // Append Frontend word to backend github link
-        createAppendChild(linkFront , titleFront)
+        allFunc.createAppendChild(linkFront , titleFront)
 
         // Append backend github link to Box Github
-        createAppendChild(githubItem , linkBack)
+        allFunc.createAppendChild(githubItem , linkBack)
 
         // Append frontend github link to Box Github
-        createAppendChild(githubItem , linkFront)
+        allFunc.createAppendChild(githubItem , linkFront)
 
         // Append Box Img to parent Item
-        createAppendChild(workItem , githubItem)
+        allFunc.createAppendChild(workItem , githubItem)
     }
 
     // Append work Item to parent projects
-    createAppendChild(projects , workItem)
+    allFunc.createAppendChild(projects , workItem)
     
 });

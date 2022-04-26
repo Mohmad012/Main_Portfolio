@@ -6,9 +6,9 @@ module.exports = function(grunt){
                 files:[
                     {
                         src:[
-                            'jsWork/functions.js',
                             'jsWork/dataOfPages.js',
                             'jsWork/allData.js',
+                            'jsWork/functions.js',
                             'jsWork/main.js',
                             'jsWork/work.js',
                         ],
