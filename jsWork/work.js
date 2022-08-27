@@ -150,7 +150,7 @@ allData.forEach(element => {
         allFunc.createAsignClass(linkBack , "btn-dark")
 
         // asign href have value to backend github link
-        allFunc.createAsignHref(linkBack , element.linkGithub)
+        allFunc.createAsignHref(linkBack , element.backGithub)
 
         // asign target have value to backend github link
         allFunc.createAsignTarget(linkBack , "_blank")
@@ -165,7 +165,7 @@ allData.forEach(element => {
         allFunc.createAsignClass(linkFront , "btn-dark")
 
         // asign href have value to frontend github link
-        allFunc.createAsignHref(linkFront , "https://store-shop-phi.vercel.app/")
+        allFunc.createAsignHref(linkFront , element.frontGithub)
 
         // asign target have value to frontend github link
         allFunc.createAsignTarget(linkFront , "_blank")
