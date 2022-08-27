@@ -37,17 +37,6 @@
                 "name":"Chat App",
                 "frontBack":true
             },
-
-
-            // {
-            //     "img":"./assets/img/projects/tiktok.webp",
-            //     "linkLive":"https://tiktok-f8fc2.web.app/",
-            //     "frontGithub":"https://github.com/Mohmad012/TikTok_frontend",
-            //     "backGithub":"https://github.com/Mohmad012/TikTok_backend",
-            //     "name":"TikTok App",
-            //     "frontBack":true
-            // },
-
             {
                 "img":"./assets/img/projects/car.webp",
                 "linkLive":"https://mohmad012.github.io/car-site/",
