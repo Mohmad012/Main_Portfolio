@@ -3,12 +3,19 @@
   const allData = function () {
     const data = [
       {
-        img: "./assets/img/projects/amazon.webp",
-        linkLive: "https://market-app-omega.vercel.app/",
-        linkGithub: "https://github.com/Mohmad012/Market_App",
-        name: "Amazon App",
+        img: "./assets/img/projects/BuyAndSaleImg.png",
+        linkLive: "https://frontend-e-commerce-app.vercel.app/",
+        linkGithub: "https://github.com/Mohmad012/Full_E-Commerce_App",
+        name: "Buy & Sale.",
         frontBack: false,
       },
+      // {
+      //   img: "./assets/img/projects/amazon.webp",
+      //   linkLive: "https://market-app-omega.vercel.app/",
+      //   linkGithub: "https://github.com/Mohmad012/Market_App",
+      //   name: "Amazon App",
+      //   frontBack: false,
+      // },
       {
         img: "./assets/img/projects/nft-bg-3.webp",
         linkLive: "https://mohmad012.github.io/app/",
